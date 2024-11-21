@@ -53,7 +53,7 @@ public class Usuario {
     }
 
     public static void mmain(String[] args){
-        System.out.println("TESTE 1 - Construtor padrão");
+        System.out.println("TESTE - Construtor padrão");
         Usuario usuario1 = new Usuario();
 
         usuario1.setId(1);
