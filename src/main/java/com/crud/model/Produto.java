@@ -1,6 +1,7 @@
 package main.java.com.crud.model;
 
 
+import main.java.com.crud.repository.ProdutoRepository;
 
 public class Produto {
 
@@ -43,22 +44,6 @@ public class Produto {
     public void Setpreco(String preco){
         this.preco = preco;
     }
-
-    public static void main(String[] args){
-
-        System.out.println("Testando Construtor");
-
-        Produto produto1 = new Produto();
-
-        produto1.setId(1);
-        produto1.setNome("Notbook");
-        produto1.Setpreco("400");
-
-        System.out.println("ID " + produto1.getId());
-        System.out.println("Nome " + produto1.getNome());
-        System.out.println("Preco " + produto1.getPreco());
-    }
-
 
 
 
