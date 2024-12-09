@@ -18,6 +18,13 @@ public class ProdutoRepository {
         return produtos;
     }
 
+    public Produto buscarPorId(int id){
+          return produtos.stream()
+                  .filter(produto -> produto.getId() == id)
+                  .findFirst()
+                  .orElse(null);
+    }
+
     public static void main (String[] args) {
         ProdutoRepository repository = new ProdutoRepository();
 
@@ -33,3 +40,4 @@ public class ProdutoRepository {
         }
     }
 }
+
